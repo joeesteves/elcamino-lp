@@ -1,0 +1,24 @@
+body
+  a#menu-toggle.btn.btn-dark.btn-lg.toggle(href='#')
+    i.fa.fa-bars
+  nav#sidebar-wrapper
+    ul#sidebar.sidebar-nav
+      a#menu-close.btn.btn-light.btn-lg.pull-right.toggle(href='#')
+        i.fa.fa-times
+      li.sidebar-brand
+        a(href='#top') El Camino
+      li
+        a(href='#top') Inicio
+      li
+        a(href='#about') Misión
+      li
+        a(href='#services') Servicios
+      li
+        a(href='#portfolio') Portfolio
+      li
+        a(href='#contact') Contacto
+  include sections/01.header.pug
+  include sections/02.about.pug
+  include sections/03.services.pug
+  include sections/04.portfolio.pug
+  include sections/05.footer.pug
